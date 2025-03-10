@@ -1,10 +1,10 @@
-import numpy as np
 import logging
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
+from datetime import timedelta
 
 def predict_future_prices_lstm(stock_data, forecast_days):
     """
